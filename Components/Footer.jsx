@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <div style={{display:"flex",marginBottom:"4px"}}>
                 <Image src={inst} height="20" width='30px'/>
-                   <h6 style={{marginLeft:"4px",cursor:"pointer"}} onClick={()=>router.push("www.instagram.com/atifnadeem_",{shallow:true})}>@supremeforce786</h6> 
+                   <h6 style={{marginLeft:"4px",cursor:"pointer"}} onClick={()=>router.push("www.instagram.com/atifnadeem_")}>@supremeforce786</h6> 
                 </div>
                 <div style={{display:"flex",marginBottom:"4px"}}>
                 <Image src={fb} height="20" width='35px'/>
@@ -104,7 +104,7 @@ const Footer = () => {
                 </div>
                 {
                     ["Privacy Policy","Help & Support","Legal"].map(
-                        (value,index)=> <div key={index} style={{display:"flex",justifyContent:"center",cursor:"pointer"}}><h6 id={`${index}`} style={{marginLeft:"4px"}}>{value}</h6></div>
+                        (value,index)=> <div key={value} style={{display:"flex",justifyContent:"center",cursor:"pointer"}}><h6 id={`${index}`} style={{marginLeft:"4px"}}>{value}</h6></div>
                     )
                 }
                 
