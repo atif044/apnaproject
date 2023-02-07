@@ -15,3 +15,16 @@ Link {
 * {
   box-sizing: border-box;
 }
+.hero{
+  display:flex;
+  overflow:auto;
+  -ms-overflow-style: none;
+  scrollbar-width:none;
+  margin-right:25px;
+  margin-left:20px;
+}
+.hero::-webkit-scrollbar
+{
+  display: none;
+}
+
