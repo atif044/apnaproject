@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Head from "next/head";
 import 'bootstrap/dist/css/bootstrap.css'
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <Navbar/>
     <Component {...pageProps} />
+    <Footer/>
     </>
     );
 }
