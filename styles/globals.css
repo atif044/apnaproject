@@ -34,6 +34,11 @@ Link {
 .image{  
    border-radius: 360px;
 }
+.image1{
+  position: relative;
+   /* border-radius: 360px; */
+}
+
 .margintu8
 {
   margin-top: -8px;
@@ -46,4 +51,15 @@ Link {
 {
   margin-top: 8px;
   align-self: center;
+}
+.marginl20{
+margin-left: 20px;
+}
+.cards{
+  display:grid;
+  max-width:none;
+  margin-left:20px;
+  margin-right:20px;
+  margin:0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
