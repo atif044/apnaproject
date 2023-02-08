@@ -12,12 +12,13 @@ const CreatorCard = (props) => {
       setstate("9rem")
   }, [isMedia])
   return (
-    <div className="card my-2" style={{width: `${state}`,height:"auto",marginLeft:"10px"}}>
-  <Image src={Atif} height="140px" width="80px" />
-  <div className="card-body">
-    <h5 className="card-title">{props.name}</h5>
-    <p className="card-text">0x000</p>
-    <p className="card-text">{props.accountPr} <strong>ETH</strong></p>
+    <div className="card my-2" style={{width: `${state}`,height:"auto",marginLeft:"10px",borderRadius:"30px 40px 30px 40px",background:"#FAF9F6"}}>
+    <div className='margint4'>
+  <Image className='image' src={Atif} height="90px" width="90px"  />
+    </div>
+  <div className="card-body margintu8">
+    <p className="">0x000</p>
+    <p className="margintu8 marginbu5">{props.accountPr} <strong>ETH</strong></p>
   </div>
 </div>
   )

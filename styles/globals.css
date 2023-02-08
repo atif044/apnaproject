@@ -5,7 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 a,
 Link {
   color: inherit;
@@ -15,6 +17,8 @@ Link {
 * {
   box-sizing: border-box;
 }
+/* Below are the CSS which are self made*/
+
 .hero{
   display:flex;
   overflow:auto;
@@ -27,4 +31,19 @@ Link {
 {
   display: none;
 }
-
+.image{  
+   border-radius: 360px;
+}
+.margintu8
+{
+  margin-top: -8px;
+}
+.marginbu5
+{
+  margin-bottom: -5px;
+}
+.margint4
+{
+  margin-top: 8px;
+  align-self: center;
+}
