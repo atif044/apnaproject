@@ -125,7 +125,12 @@ export default function Home() {
         } */}
         {/* IN CASE WE HAVE TO DEAL WITH THE OBJECTS OF ARRAY BElow is the code  */}
         {
-          Object.map((element,key)=> {return <div><CreatorCard accountPr={element.pr} img={element.img} name={element.name}/></div>})
+          Object.map((element,key)=> {return <div>
+          <CreatorCard 
+          accountPr={element.pr} 
+          img={element.img}
+           name={element.name}
+           /></div>})
         }
         <div onClick={()=>handleScroll("left")} style={{display:"flex",cursor:"pointer",position:"absolute",left:0,alignSelf:"center",marginLeft:"20px"}}>
             <BsFillArrowLeftCircleFill  size={25}  />
@@ -136,7 +141,20 @@ export default function Home() {
      </div>
         <HotBids/>
       <div className='cards'>
-           { [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1].map((elem)=>{return <HotbidsCard num={elem}/>})
+           { [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1].map((elem,key)=>{
+            return <HotbidsCard
+            key={`nft-${key}`}
+            nft={{
+                key,
+                name:`Perch Nft-${key}`,
+                seller:`0x001...97az`,
+                owner:`0x00k...90az`,
+                description:"Cool Nft for sale",
+                price:"150.005"
+            }
+            }
+            />}
+            )
            }
       </div>                
       </div>

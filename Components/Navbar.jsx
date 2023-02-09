@@ -34,7 +34,7 @@ const Navbar = () => {
             </Link>
             </ul>
             <ul className='d-flex'>
-            <button onClick={()=>{router.push("/")}}  style={{marginRight:"4px",backgroundColor:"purple",color:"white",borderRadius:'360px'}}>Create Nft</button>
+            <button onClick={()=>{router.push("/create-nft")}}  style={{marginRight:"4px",backgroundColor:"purple",color:"white",borderRadius:'360px'}}>Create Nft</button>
             <button onClick={()=>{router.push("/")}}  style={{borderRadius:"360px",background:"green",color:"white"}} >Connect</button>
             </ul>
           </div>
