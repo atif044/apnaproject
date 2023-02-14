@@ -9,7 +9,6 @@ const create_nft = () => {
   const onKeyUp=(e)=>
   {
     setformData({...formData,[e.target.name]:e.target.value})
-    console.log(formData)
   }
   const onDrop=useCallback(()=>
   {
@@ -54,18 +53,24 @@ const create_nft = () => {
     </div>
     </div>
     {/* INPUT FORM */}
-    <form>
+    <form onSubmit={(e)=>{e.preventDefault(); console.log("from ",formData)}}>
     <div className='flexb'>
     <div  className='inputfields'>
     <label className='font-dancing-20-with-m10'>Name</label>
-    <input className='field'/>
+    <input onChange={onKeyUp} name='name' className='field'/>
     <div className=''>
     <label className='font-dancing-20-with-m10'>Description</label>
-    <textarea rows={5} className='field disable-border-radius resize-none'/>
+    <textarea onChange={onKeyUp} name='description' rows={5} className='field disable-border-radius resize-none'/>
     </div>
     <div className=''>
     <label className='font-dancing-20-with-m10'>price</label>
-    <input className='field'/>
+    <div style={{display:"flex"}}>
+    <input onChange={onKeyUp} name='price' className='field disable-border-radius'/>
+    <h6 className='font-dancing-20-with-m10'>ETH</h6>
+    </div>
+    </div>
+    <div>
+      <button type='submit' className='font-dancing-20 field btn-style '>Create</button>
     </div>
     </div>
     </div>

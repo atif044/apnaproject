@@ -116,11 +116,17 @@ margin-left: 20px;
   border:solid;
   border-radius: 0;
 }
-.self-align-start{
+.self-align-center{
   align-self:center;
 }
 .font-dancing-20-with-m10{
   margin-left:10px;
+  font-family:'Dancing Script';
+  font-size: 20px;
+  font-weight: bolder;
+}
+.font-dancing-20{
+  /* margin-left:10px; */
   font-family:'Dancing Script';
   font-size: 20px;
   font-weight: bolder;
@@ -143,3 +149,9 @@ margin-left: 20px;
 .w-auto{
   width:auto;
 }
+.btn-style{
+  background:green;
+  color:white;
+  margin-top: 10px;
+}
+
